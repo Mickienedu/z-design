@@ -1,0 +1,1080 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@500&family=Poppins:wght@100&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' sans-serif;
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+    background: black;
+}
+/* the logo and name */
+.logo{
+    /* display: grid;
+    align-items: center; */
+    text-align: center;
+    line-height: 20px;
+}
+.logo img{
+    width: 100px;
+    cursor: pointer;
+}
+.logo h2{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-top: -1rem;
+}
+#firstNav{
+    display: grid;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* the first nav  */
+.listItem{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    border-bottom:  1px solid rgb(104, 98, 98);
+    border-left:  1px solid rgb(104, 98, 98);
+    height: 40px;
+    padding: 4px;
+    box-shadow: 1px 1px 1px black;
+    margin-top: 10px;
+} 
+.listItem li a{
+    color: rgb(209, 192, 192);
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+.listItem li a:hover{
+    background: whitesmoke;
+    color: black;
+    border-radius: 4px;
+    /* padding: 4px; */
+}
+
+#login, #register{
+    color: #ff004f;
+}
+#login a, #register a{
+    color: white;
+    font-size: 17px;
+} 
+#login a:hover, #register a:hover{
+    color: black;
+    background: whitesmoke;
+}
+
+/* the second nav */
+.listItem2{
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    align-items: center;
+}
+.listItem2 li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+.listItem2 li a:hover{
+    color: white;
+    background: #ff004f;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#home{
+    background: #ff004f;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+/* THE SEARCH INPUT */
+.facto{
+    display: flex;
+    align-items: center;
+}
+.facto input{
+    width: 190px;
+    height: 30px;
+    font-size: 13px;
+    outline: none;
+    border: none;
+}
+.facto i{
+    background: #ff004f;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+} 
+/* the search input ends here */
+
+
+/* carousel */
+.container{
+    width: 98.95vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* background-color: red; */
+}
+ .carousel-inner, .imgcaro{
+    width: 98.9vw;
+    height: 65rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+.carousel-caption a{
+    color: white !important;
+    background: #ff004f !important;
+    padding: 4px !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    font-size: 10px !important;
+}
+.sr-only{
+    color: white !important;
+}
+/* second section  */
+.second-section-container{
+    background: #333;
+}
+.second-section-container .the-heading{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+    background: black;
+}
+.the-heading h4{
+    color: white;
+    font-size: 14px;
+}
+.the-heading h4 a{
+    color: white;
+    background: #ff004f;
+    padding: 4px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.img-sec-section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.img-sec-section .imgsec img{
+    width: 330px;
+    height: 230px;
+}
+
+.img-sec-section .imgsec h3{
+   margin-top: -4rem;
+   color: white;
+   font-weight: 600;
+}
+
+/* the paragraph */
+.second-section-container .paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* border: 2px solid red; */
+    /* width: 400px; */
+    text-align: center;
+    
+}
+.paragraph div{
+        border: 2px solid #ff004f;
+        padding: 2px;
+
+}
+
+.paragraph div a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.paragraph div i{
+    color: white;
+    margin-left: 10px;
+}
+.paragraph div:hover{
+    background: #ff004f;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* the third section */
+.third-container{
+    display: grid;
+    background-image: url('img/hotel-room4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+}
+.the-text{
+    background: black;
+    margin-left: 100px;
+    /* margin-top: 50px; */
+    width: 350px;
+    padding: 4px;
+    padding-left: 8px;
+    border: 6px solid  rgb(202, 198, 198);
+    box-shadow: 2px 2px 2px rgb(202, 198, 198);
+    /* transition: 0.3s ease-in-out; */
+}
+.the-text:hover{
+    background: #333;
+    color: white;
+}
+.the-text .p{
+    width: 350px;
+    font-size: 13px;
+    color: rgb(202, 198, 198);
+}
+.the-text h4 {
+    width: 360px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    line-height: 25px;
+}
+.the-text p a{
+    color: #ff004f;
+    text-decoration: underline;
+}
+
+.popular-fabrics{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    line-height: 17px;
+}
+.popular-fabrics .img-fabrics img{
+    width: 100px;
+    height: 70px;
+}
+.popular-fabrics .img-fabrics p{
+    font-size: 12px;
+}
+.popular-fabrics .img-fabrics span{
+    font-size: 10px;
+    color: #ff004f;
+}
+.img-fabrics p{
+    color: white;
+}
+
+/* the about section */
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    background: #333;
+    padding: 6px;
+    border-top: 10px solid rgb(136, 131, 131);
+    border-bottom: 10px solid rgb(136, 131, 131);
+}
+.about-container .about-us{
+    line-height: 25px;
+}
+.about-container .about-us p{
+    font-size: 14px;
+    width: 550px;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+.about-container .about-us button{
+    font-size: 14px;
+    width: 120px;
+    color: white;
+    background: #ff004f;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    padding: 4px;
+    border: none;
+}
+.about-container .about-us h3{
+    color: white;
+    font-size: 15px;
+}
+.about-container .latest-news .the-news{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.about-container .latest-news{
+    display: grid;
+    gap: 1rem;
+}
+.about-container .latest-news h3{
+    color: white;
+    font-size: 15px;
+}
+.about-container .latest-news button{
+    width: 150px;
+    font-size: 14px;
+    background: #ff004f;
+    color: white;
+    border-radius: 4px;
+    padding: 4px;
+    height: 40px;
+    border: none;
+}
+.the-news .news-write-up h4{
+    color: white;
+    font-size: 14px;
+}
+.the-news .news-write-up span{
+    color: #ff004f;
+    font-size: 14px;
+}
+.the-news .news-write-up p{
+    width: 300px;
+    font-size: 12px;
+    color: whitesmoke;
+
+}
+.the-news img{
+    width: 120px;
+    height: 70px;
+}
+
+/* the footer */
+footer{
+    background: black;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.footer-container .footer-logo{
+    display: grid;
+    align-items: center;
+}
+.footer-container .footer-logo img{
+    width: 100px;
+    height: 70px;
+    margin-top: 40px;
+}
+/* .footer-container .footer-logo h2{
+    font-size: 15px;
+    color: white;
+} */
+
+
+.footer-container .footer-logo .logo-img-text h2{
+    font-size: 16px;
+    color: white;
+    margin-top: -1rem;
+}
+.footer-container .footer-logo p{
+    width: 330px;
+    color: rgb(136, 131, 131);
+}
+.footer-container .footer-info h3{
+    font-size: 15px;
+    color: white;
+    margin-top: 50px;
+}
+.footer-container .footer-info ul li{
+    list-style: none;
+    line-height: 25px;
+}
+.footer-container .footer-info ul li a{
+    text-decoration: none;
+    color: rgb(136, 131, 131);
+    font-size: 14px;
+    font-weight: light;
+}
+/* address */
+.footer-info .contact{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.footer-info .contact i{
+    color: white;
+}
+.footer-info .contact p{
+    color: rgb(136, 131, 131);
+}
+.footer-info .contact a{
+    color: rgb(136, 131, 131);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.the-end-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+    
+}
+.the-end-footer .privacy p{
+    font-size: 14px;
+    color: rgb(136, 131, 131);
+}
+.the-end-footer .privacy p a{
+    font-size: 14px;
+    color: rgb(136, 131, 131);
+    text-decoration: none;
+}
+.the-end-footer .privacy p i{
+    font-size: 17px;
+    color: white;
+}
+ /* .container1 #firstNav i{
+    display: none;
+} */
+#bars, #times{
+    display: none;
+} 
+/* -------css for small screen------- */
+@media only screen and (max-width: 1024px) {
+    /* the about section */
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.about-container .about-us p{
+    font-size: 14px;
+    width: auto;
+   color: rgb(136, 131, 131);
+}
+.about-container .about-us h3{
+    color: white;
+    font-size: 14px;
+}
+.about-container .latest-news .the-news{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.about-container .latest-news{
+    display: grid;
+    gap: 1rem;
+}
+.about-container .latest-news h3{
+    color: white;
+    font-size: 14px;
+}
+.about-container .latest-news button{
+    width: 150px;
+    font-size: 14px;
+    background: #ff004f;
+    color: white;
+    border-radius: 4px;
+    padding: 4px;
+    height: 40px;
+    border: none;
+}
+.the-news .news-write-up h4{
+    color: white;
+    font-size: 14px;
+}
+.the-news .news-write-up span{
+    color: #ff004f;
+    font-size: 14px;
+}
+.the-news .news-write-up p{
+    width: 300px;
+    font-size: 12px;
+    color: rgb(136, 131, 131);
+
+}
+.the-news img{
+    width: 120px;
+    height: 70px;
+}
+
+}
+@media only screen and (max-width: 900px){
+    .container1{
+        display: flex;
+        justify-content: space-between;
+        background: black;
+        width: 100%;
+    }
+    /* Blessed did something from here to... */
+    .container1 .firstNav{
+        /* background-color: green; */
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .container1 .listItem{
+        display: block;
+        flex-direction: column;
+        gap: 4rem;
+        justify-content: start;
+        line-height: 20px;
+    
+        border-bottom:  none;
+        border-left:  none;
+        height: 0;
+        padding: 0px;
+        box-shadow: none;
+        margin-top: 4px;
+        /* margin-left: -2.3rem; */
+        margin-bottom: 20px;
+    }
+     .listItem2{
+        display: block;
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 200px;
+    }
+    .listItem2 li a{
+        font-size: 18px;
+        margin-left: 1rem;
+    }
+    .listItem li a{
+        font-size: 18px;
+        color: white;
+    }
+    /* ...to here */
+
+
+     #bars{
+        display: block;
+        font-size: 30px;
+        margin-right: 40px;
+        color: white;
+        margin-top: 25px;
+    }
+    #firstNav{
+        display: flex;
+        flex-direction: column;
+        background: #ff004f;
+        /* background: red; */
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 20px;
+        line-height: 30px;
+        gap: 4rem;
+        z-index: 10;
+        transition: right 0.5s;
+    }
+
+    /* the logo and name */
+.logo{
+   margin-bottom: 1rem;
+}
+    .logo img{width: 80px;
+        height: 80px;
+    }
+
+    #firstNav ul li{
+        display: block;
+        margin: 25px;
+    }
+    #times{
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+    } 
+    #login, #register{
+        color: white;
+    }
+    #login i a, #register i a{
+        color: white;
+        font-size: 14px;
+    } 
+
+
+    /* THE SEARCH INPUT */
+    .facto{
+        align-items: center;
+        margin-left: 8px;
+    }
+.facto input{
+    width: 160px;
+    border: none;
+    border-radius: none;
+    padding: 4px;
+    font-size: 15px;
+   
+}
+.facto i{
+    background: white;
+    width: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #ff004f;
+} 
+/* the search input ends here */
+#home{
+    background: none;
+    padding: 0px;
+    border-radius: 0px;
+}
+
+    /* second section  */
+
+.second-section-container .the-heading{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  
+}
+.the-heading h4{
+    font-size: 14px;
+}
+.the-heading h4 a{
+    font-size: 14px;
+    padding: 6px;
+}
+.img-sec-section{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.img-sec-section .imgsec img{
+    width: 400px;
+}
+.img-sec-section .imgsec h3{
+   margin-top: -4rem;
+   color: white;
+}
+
+/* the paragraph */
+.paragraph div{
+        padding: 4px;
+}
+
+.paragraph .prod a{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.paragraph div i{
+    color: white;
+    margin-left: 20px;
+}
+
+
+/* the about section */
+
+.about-container{
+    display: grid;
+}
+.about-container .about-us{
+    line-height: 25px;
+}
+.about-container .about-us p{
+    font-size: 17px;
+    width: auto;
+   
+}
+.about-container .about-us button{
+    font-size: 12px;
+    padding: 6px;
+    border: none;
+}
+.about-container .about-us h3{
+    font-size: 18px;
+}
+.about-container .latest-news .the-news{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.about-container .latest-news{
+    display: grid;
+    gap: 1rem;
+}
+.about-container .latest-news h3{
+    font-size: 18px;
+}
+.about-container .latest-news button{
+    font-size: 12px;
+    padding: 6px;
+    
+}
+.the-news .news-write-up h4{
+    color: white;
+    font-size: 17px;
+}
+.the-news .news-write-up span{
+    color: red;
+    font-size: 14px;
+}
+.the-news .news-write-up p{
+    width: auto;
+    font-size: 17px;
+
+}
+.the-news img{
+    width: 100px;
+    height: 100px;
+}
+
+
+@media only screen and (max-width: 620px){
+
+    /* carousel */
+.container{
+    width: 98.95vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* background-color: red; */
+}
+ .carousel-inner, .imgcaro{
+    width: 98.9vw;
+    height: 35rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+}
+
+.carousel-caption a{
+    color: white !important;
+    background: #ff004f !important;
+    padding: 6px !important;
+    text-decoration: none !important;
+    border-radius: 4px !important;
+    font-size: 10px !important;
+}
+    /* second section  */
+
+.second-section-container .the-heading{
+    gap: 1rem;
+  
+}
+.the-heading h4{
+    font-size: 11px;
+}
+.the-heading h4 a{
+    font-size: 11px;
+}
+.img-sec-section{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.img-sec-section .imgsec h3{
+   margin-top: -4rem;
+   color: white;
+   font-size: 16px;
+}
+
+    .img-sec-section .imgsec img{
+        width: 330px;
+    }
+    /* the third section */
+.third-container{
+    display: grid;
+    background-image: url('img/hotel-room4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    width: auto;
+}
+.the-text{
+    background: black;
+    /* margin-left: 100px; */
+    margin-top: 50px;
+    width: auto;
+    padding: 4px;
+    /* padding-left: 8px; */
+    border: 6px solid  rgb(202, 198, 198);
+    box-shadow: 2px 2px 2px rgb(202, 198, 198);
+    /* transition: 0.3s ease-in-out; */
+}
+.the-text:hover{
+    background: #333;
+    color: white;
+}
+.the-text .p{
+    width: auto;
+    font-size: 10px;
+    color: rgb(202, 198, 198);
+}
+.the-text h4 {
+    width: auto;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+    line-height: 25px;
+}
+.the-text p a{
+    color: #ff004f;
+    text-decoration: underline;
+}
+
+.popular-fabrics{
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    line-height: 10px;
+}
+.popular-fabrics .img-fabrics img{
+    width: 60px;
+    height: 60px;
+}
+.popular-fabrics .img-fabrics p{
+    font-size: 10px;
+}
+.popular-fabrics .img-fabrics p span{
+    font-size: 12px;
+    color: #ff004f;
+}
+.img-fabrics p{
+    color: white;
+}
+
+
+
+
+    /* the about section */
+
+.about-container{
+    display: grid;
+    justify-content: center;
+}
+.about-container .about-us{
+    line-height: 25px;
+}
+.about-container .about-us p{
+    font-size: 14px;
+    width: auto;
+    color: rgb(136, 131, 131);
+}
+.about-container .about-us button{
+    font-size: 14px;
+    padding: 6px;
+    border: none;
+}
+.about-container .about-us h3{
+    font-size: 16px;
+}
+.about-container .latest-news .the-news{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.about-container .latest-news{
+    display: grid;
+    gap: 1rem;
+}
+.about-container .latest-news h3{
+    font-size: 15px;
+}
+.about-container .latest-news button{
+    font-size: 14px;
+    padding: 6px;
+    
+}
+.the-news .news-write-up h4{
+    color: white;
+    font-size: 14px;
+}
+.the-news .news-write-up span{
+    color: red;
+    font-size: 11px;
+}
+.the-news .news-write-up p{
+    width: auto;
+    font-size: 13px;
+    color: rgb(136, 131, 131);
+
+
+}
+.the-news img{
+    width: 100px;
+    height: 100px;
+}
+/* the footer */
+footer{
+    background: black;
+}
+.footer-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.footer-container .footer-logo{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container .footer-logo img{
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+}
+.footer-container .footer-logo .logo-img-text h2{
+    font-size: 16px;
+    /* color: white;
+    margin-top: -1rem; */
+}
+.footer-container .footer-logo p{
+    width: auto;
+    color: rgb(136, 131, 131);
+    font-size: 15px;
+}
+.footer-container .footer-info h3{
+    font-size: 16px;
+    color: white;
+    margin-top: 50px;
+}
+.footer-container .footer-info ul li{
+    list-style: none;
+    line-height: 25px;
+}
+.footer-container .footer-info ul li a{
+    text-decoration: none;
+    color: rgb(136, 131, 131);
+    font-size: 16px;
+    font-weight: light;
+}
+/* address */
+.footer-info{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.footer-info .contact{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.footer-info .contact i{
+    color: white;
+}
+.footer-info .contact p{
+    color: rgb(136, 131, 131);
+    font-size: 16px;
+}
+.footer-info .contact a{
+    color: rgb(136, 131, 131);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.the-end-footer{
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+    width: auto;
+}
+.the-end-footer .privacy p{
+    font-size: 10px;
+    color: rgb(136, 131, 131);
+    width: auto;
+}
+.the-end-footer .privacy p a{
+    font-size: 10px;
+    color: rgb(136, 131, 131);
+    text-decoration: none;
+}
+.the-end-footer .privacy p i{
+    font-size: 10px;
+    color: white;
+}
+}
+}
+@media only screen and (max-width: 500px){
+    #firstNav{
+        display: flex;
+        flex-direction: column;
+        background: #ff004f;
+        /* background: red; */
+        position: fixed;
+        top: 0;
+        right: -150px;
+        width: 150px;
+        height: 100vh;
+        padding-top: 20px;
+        line-height: 30px;
+        gap: 4rem;
+        z-index: 10;
+        transition: right 0.5s;
+    }
+    .listItem2 li a{
+        font-size: 14px;
+        margin-left: -0.05rem;
+    }
+    .listItem li a{
+        font-size: 14px;
+        color: white;
+        
+    }
+    #login i a, #register  a{
+        color: white;
+        font-size: 14px;
+    } 
+    #register i{
+        font-size: 12px;
+    }
+    
+    /* THE SEARCH INPUT */
+    .facto{
+        align-items: center;
+        margin-left: 8px;
+        margin-left: -0.13rem;
+    }
+.facto input{
+    width: 120px;
+    border: none;
+    border-radius: none;
+    padding: 4px;
+    font-size: 12px;
+   
+}
+/* .facto i{
+    background: white;
+    width: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #ff004f;
+}  */
+
+}

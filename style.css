@@ -584,6 +584,52 @@ footer {
     border: none;
     cursor: pointer;
 }
+/* registration ends  */
+
+/* LOGIN STYLING */
+.login{
+    display: grid;
+    justify-content: center;
+    width: auto;
+    gap: 2rem;
+    margin-top: 50px;
+}
+.login .the-input-login{
+    display: flex;
+    gap: 2rem;
+}
+.login .the-input-login label{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.login .the-input-login label input{
+    width: 300px;
+    height: 40px;
+    background: #333;
+    font-size: 15px;
+    padding: 4px;
+    border: none;
+    color: rgb(209, 202, 202);
+    border-radius: 4px;
+    outline: none;
+}
+.login .submit-login{
+    display: flex;
+    justify-content: center;
+}
+.login #submit_login{
+    width: 120px;
+    height: 40px;
+    font-size: 17px;
+    background: #ff004f;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+
 /* -------css for small screen------- */
 @media only screen and (max-width: 1024px) {
     /* the about section */
@@ -671,6 +717,13 @@ footer {
         display: grid;
         gap: 2rem;
     }
+    /* login */
+    .login .the-input-login{
+        display: grid;
+        gap: 1rem;
+    }
+
+    
     .container1 {
         display: flex;
         justify-content: space-between;

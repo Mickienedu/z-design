@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FABRICS FIRM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.css">
+</head>
+<body>
+    <div class="container1">
+        <div class="logo">
+            <img src="img/travel-icon2.png" alt="">
+            <h2>FACTO-LALA</h2>
+        </div>
+        <!-- the first nav goes here -->
+        <div id="firstNav" class="firstNav">
+            <ul class="listItem">
+                <li><a href="#">Fabric Finder</a></li>
+                <li><a href="#">Project Tracker</a></li>
+                <li><a href="#">Shop Online</a></li>
+                <li><a href="#">Financing</a></li>
+                <li id="login"><i class="fas fa-arrow-right"></i><a href="#"> LOGIN</a> </li>
+                <li id="register"> <i class="fas fa-edit"></i><a href="register.html"> REGISTER</a> </li>
+            </ul>
+            <ul class="listItem2">
+                <li id="home"><a href="index.html">Home</a></li>
+                <li><a href="#">Hospitality</a></li>
+                <li><a href="#">Healthcare</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Green</a></li>
+                <li><a href="#">Resources</a></li>
+                <div class="facto">
+                    <input type="search" placeholder="Search facto-lala" autofocus>
+                    <i class="fas fa-search"></i>
+                </div>
+            </ul>
+            <i id="times" class="fas fa-times" onclick="closemenu()"></i> 
+
+        </div>
+        <i id="bars" class="fas fa-bars" onclick="openmenu()"></i>
+    </div>
+
+    <div class="register">
+        <div class="the-input">
+            <label for="fname">First name:
+                <input type="text" placeholder="firstName" required>
+            </label>
+            <label for="lname">Last name:
+                <input type="text" placeholder="lastName" required>
+            </label>
+        </div>
+        <div class="the-input">
+            <label for="email">Email add:
+                <input type="email" placeholder="Enter your email" required>
+            </label>
+            <label for="password">Password:
+                <input type="text" placeholder="Enter your password" required>
+            </label>
+        </div>
+        <div class="submit">
+            <input type="submit" id="submit">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

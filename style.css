@@ -53,37 +53,6 @@
     margin-top: 10px;
 }
 
-.listItem li a {
-    color: rgb(209, 192, 192);
-    text-decoration: none;
-    font-size: 17px;
-    cursor: pointer;
-}
-
-.listItem li a:hover {
-    background: whitesmoke;
-    color: black;
-    border-radius: 4px;
-    /* padding: 4px; */
-}
-
-#login,
-#register {
-    color: #ff004f;
-}
-
-#login a,
-#register a {
-    color: white;
-    font-size: 17px;
-}
-
-#login a:hover,
-#register a:hover {
-    color: black;
-    background: whitesmoke;
-}
-
 /* the second nav */
 .listItem2 {
     display: flex;
@@ -91,32 +60,60 @@
     list-style: none;
     align-items: center;
 }
-
-.listItem2 li a {
+/* the making of nav styling and bottom hover effect */
+#firstNav ul li a{
     color: white;
     text-decoration: none;
     font-size: 17px;
     cursor: pointer;
+    position: relative;
 }
 
-.listItem2 li a:hover {
-    color: white;
+/* the bottom hover codes */
+#firstNav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
     background: #ff004f;
-    border-radius: 4px;
-    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
 }
 
-#home {
+/* the bottom hover effect */
+#firstNav ul li a:hover::after{
+    width: 100%;
+}
+
+/* first nav color  */
+#firstNav .listItem li a {
+    color: rgb(209, 192, 192);
+}
+#firstNav .listItem li:nth-child(1){
+    /* border-left: 4px solid #ff004f; */
     background: #ff004f;
     padding: 6px;
     border-radius: 4px;
 }
 
+/* the login and register */
+#firstNav #login a,
+#firstNav #register a {
+    color: white;
+    font-size: 16px;
+}
+#login,
+#register {
+    color: #ff004f;
+}
+
+/* the home nav */
+#firstNav .listItem #home a{
+    color: white;
+}
+
 /* THE SEARCH INPUT */
-/* .facto {
-    display: flex;
-    align-items: center;
-} */
 
 .facto input {
     width: 190px;
@@ -733,18 +730,16 @@ footer {
 
     /* Blessed did something from here to... */
     .container1 .firstNav {
-        /* background-color: green; */
         display: flex;
         flex-direction: column;
-        /* width: 100%; */
     }
 
-    .container1 .listItem {
+    .container1 #firstNav .listItem {
         display: block;
         flex-direction: column;
-        gap: 4rem;
+        /* gap: 4rem; */
         justify-content: start;
-        line-height: 20px;
+        line-height: 30px;
 
         border-bottom: none;
         border-left: none;
@@ -756,23 +751,44 @@ footer {
         margin-bottom: 20px;
     }
 
-    .listItem2 {
+/* the making of nav styling and bottom hover effect */
+
+/* the bottom hover codes */
+#firstNav ul li a::after{
+    background: white;
+}
+
+/* the bottom hover effect */
+#firstNav ul li a:hover::after{
+    width: 100%;
+}
+#firstNav .listItem li:nth-child(1){
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
+/* the login and register */
+#firstNav #login a,
+#firstNav #register a {
+    color: white;
+    font-size: 14px;
+}
+#login,
+#register {
+    color: #ff004f;
+}
+
+    #firstNav .listItem2 {
         display: block;
         flex-direction: column;
+        align-items: center;
         gap: 4rem;
-        margin-top: 200px;
+        margin-top: 180px;
     }
 
-    .listItem2 li a {
-        font-size: 18px;
-        margin-left: 1rem;
+    #firstNav .listItem2 li a {
+        margin-left: 10px;
     }
-
-    .listItem li a {
-        font-size: 18px;
-        color: white;
-    }
-
     /* ...to here */
 
 
@@ -794,9 +810,9 @@ footer {
         right: -200px;
         width: 200px;
         height: 100vh;
-        padding-top: 20px;
+        /* padding-top: 20px; */
         line-height: 30px;
-        gap: 4rem;
+        /* gap: 2rem; */
         z-index: 10;
         transition: right 0.5s;
     }
@@ -813,7 +829,7 @@ footer {
 
     #firstNav ul li {
         display: block;
-        margin: 25px;
+        margin: 10px;
     }
 
     #times {
@@ -1229,13 +1245,6 @@ footer {
             background: black;
         }
 
-        /* .footer-container {
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 50px;
-            text-align: center;
-        } */
         .footer-container {
             display: grid;
             justify-content: center;
@@ -1259,8 +1268,6 @@ footer {
 
         .footer-container .footer-logo .logo-img-text h2 {
             font-size: 16px;
-            /* color: white;
-    margin-top: -1rem; */
         }
 
         .footer-container .footer-logo p {
@@ -1293,12 +1300,6 @@ footer {
             justify-content: center;
             text-align: center;
         }
-
-        /* .footer-info .contact {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        } */
 
         .footer-info .contact i {
             color: white;
@@ -1376,23 +1377,6 @@ footer {
         gap: 4rem;
         z-index: 10;
         transition: right 0.5s;
-    }
-
-    .listItem2 li a {
-        font-size: 14px;
-        margin-left: -0.05rem;
-    }
-
-    .listItem li a {
-        font-size: 14px;
-        color: white;
-
-    }
-
-    #login i a,
-    #register a {
-        color: white;
-        font-size: 14px;
     }
 
     #register i {
